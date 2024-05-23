@@ -9,6 +9,8 @@ public class DashboardPage {
 
 	@FindBy(xpath = "//h6[text()='Dashboard']")
 	public WebElement DashboardText;
+	
+	
 
 	public DashboardPage(WebDriver driver) {
 
