@@ -6,18 +6,21 @@ import org.testng.annotations.Test;
 import com.base.Base;
 import com.page_class.DashboardPage;
 import com.page_class.LoginPage;
+import com.page_class.SidebarPage;
 import com.utility.Utility;
 
 public class TC_001 extends Base {
 
 	LoginPage login;
 	DashboardPage dashboard;
+	SidebarPage sidebar;
 
 	@Test(description = "Verify login with valid ESS username and valid password.")
 	public void tc_001() {
 
 		login = new LoginPage(driver);
 		dashboard = new DashboardPage(driver);
+		sidebar=new SidebarPage(driver);
 
 		Utility.maximizeWindow(driver);
 		driver.get(url);
@@ -29,6 +32,10 @@ public class TC_001 extends Base {
 		String actualResult = dashboard.DashboardText.getText();
 
 		Assert.assertEquals(expectedResult, actualResult);
+		sidebar.pim.click();
+		
+		
+		
 
 	}
 

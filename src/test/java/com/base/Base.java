@@ -39,6 +39,10 @@ public class Base {
 
 	}
 
+	public static WebDriver getDriver() {
+		return driver;
+	}
+
 	@AfterClass
 	public void tearDown() throws InterruptedException {
 		Thread.sleep(3000);
