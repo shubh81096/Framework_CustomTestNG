@@ -11,7 +11,7 @@ public class MyInfoPage {
 	WebDriver driver;
 
 	@FindBy(name = "firstName")
-	WebElement firstName;
+	public WebElement firstName;
 
 	@FindBy(name = "middleName")
 	WebElement middleName;

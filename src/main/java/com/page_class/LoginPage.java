@@ -8,13 +8,13 @@ import org.openqa.selenium.support.PageFactory;
 public class LoginPage {
 
 	@FindBy(name = "username")
-	private WebElement username;
+	public WebElement username;
 
 	@FindBy(name = "password")
-	private WebElement password;
+	public WebElement password;
 
 	@FindBy(xpath = "//button[text()=' Login ']")
-	private WebElement loginBtn;
+	public WebElement loginBtn;
 
 	@FindBy(xpath = "//p[text()='Invalid credentials']")
 	public WebElement invalidCred;

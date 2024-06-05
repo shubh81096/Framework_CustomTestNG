@@ -11,28 +11,28 @@ public class PimPage {
 	public WebElement addEmployee;
 
 	@FindBy(name = "firstName")
-	WebElement firstName;
+	public WebElement firstName;
 
 	@FindBy(name = "middleName")
-	WebElement middleName;
+	public WebElement middleName;
 
 	@FindBy(name = "lastName")
-	WebElement lastName;
+	public WebElement lastName;
 
 	@FindBy(xpath = "//div[@class='oxd-switch-wrapper']//span")
-	WebElement CreateLoginDetails;
+	public WebElement CreateLoginDetails;
 
 	@FindBy(xpath = "(//input[@class='oxd-input oxd-input--active'])[3]")
-	WebElement username;
+	public WebElement username;
 
 	@FindBy(xpath = "(//input[@type='password'])[1]")
-	WebElement password;
+	public WebElement password;
 
 	@FindBy(xpath = "(//input[@type='password'])[2]")
-	WebElement confirmPassword;
+	public WebElement confirmPassword;
 
 	@FindBy(xpath = "//button[text()=' Save ']")
-	WebElement saveBtn;
+	public WebElement saveBtn;
 
 	public PimPage(WebDriver driver) {
 
