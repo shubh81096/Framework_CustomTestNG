@@ -42,8 +42,9 @@ public class Utility {
 
 	public static String getPropertyDirectly(String key) {
 		Properties properties = new Properties();
+		String path = System.getProperty("user.dir") + "\\test_data\\properties\\sit_env.properties";
 		try {
-			FileInputStream file = new FileInputStream("C:\\Users\\admin\\Desktop\\Framework_selenium_custom_TestNG\\Framework_CustomTestNG\\test_data\\properties\\sit_env.properties");
+			FileInputStream file = new FileInputStream(path);
 			properties.load(file);
 			return properties.getProperty(key);
 		} catch (Exception e) {
